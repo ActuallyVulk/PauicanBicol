@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about-style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="objectives.html">OBJECTIVES</a></li>
+            <li><a href="activities.html">ACTIVITIES</a></li>
+            <li><a href="members.html">MEMBERS</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+            <li><a href="developers.html">DEVELOPER'S PAGE</a></li>
+           
+        </ul>
+        <ul>
+            <li><a href="main.html"><img class="logo" src="images/Nogot/logo.png"></a></li>
+            <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+            <li class="hideOnMobile"><a href="objectives.html">OBJECTIVES</a></li>
+            <li class="hideOnMobile"><a href="activities.html">ACTIVITIES</a></li>
+            <li class="hideOnMobile"><a href="members.html">MEMBERS</a></li>
+            <li class="hideOnMobile"><a href="events.html">EVENTS</a></li>
+            <li class="hideOnMobile"><a href="contacts.html">CONTACTS</a></li>
+            <li class="hideOnMobile"><a href="developers.html">DEVELOPER'S PAGE</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section class="about">
+        <div class="about-us">
+            <div class="title">
+                <h1>ABOUT US</h1>
+            </div>
+
+            <div class="desc">
+                <h2>WE ASPIRE TO INSPIRE
+                    AND PERFORM TO REFORM</h2>
+            </div>
+
+            <div class="text">
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Performing Arts Union Integrated for Culture,
+Arts and Nature (PAUICAN) is the official
+department-based organization of the Bachelor of
+Performing Arts (Theater). In 2018, the AB Speech
+and Theater Arts was changed into Bachelor of
+Performing Arts Theater because of the K to 12
+programs by the Department of Education that
+brought changes to the secondary and tertiary
+curriculum. In 2019, the organization was founded by
+the pioneering batch of Bachelor of the Performing
+Arts (Theater).
+                </p>
+            </div>
+
+            <div class="image">
+                <img src="images/Nogot/main3.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="missions-nature">
+        <div class="mission-nature">
+
+            
+            <div class="title2 reveal">
+                <h1>Mission and Vision</h1>
+            
+
+            
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Fueled by a vision to empower artists and enrich Bicolano communities, we strive to elevate the arts and ignite cultural innovation.
+                </p>
+            </div>
+
+            <div class="mission reveal">
+                <h1>Our Mission</h1>
+                <p>
+                    To uplift the status and standards of theater and the arts in
+the Bicol Region using various arts forms as medium for
+innovation in culture, arts, and nature.
+                </p>
+            </div>
+
+            <div class="vision reveal">
+                <h1>Our Vision</h1>
+                <p>
+                    A home of Artists aiming for the betterment of communities
+using the Arts.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="natures">
+            <div class="nature">
+            <div class="title3 reveal">
+                <h1>
+                    What We Do
+                </h1>
+            
+
+           
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;At our core, we ignite a passion for the performing arts, fostering cultural understanding and national pride through dance and theater education, creation, and performance.
+                </p>
+            </div>
+
+            <div class="m1 reveal">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Impart a meaningful awareness and appreciation of the characteristics and qualities and of the functions and roles of the performing arts as theorized, taught, practiced, and created in Philippine cultures and in the world;
+            </div>
+
+            <div class="m2 reveal">
+                &nbsp;&nbsp;Impart an understanding of the physical manifestations and communicative capacities of dance and theater in the context of cultures;
+            </div>
+
+            <div class="m3 reveal">
+                &nbsp;&nbsp;Provide opportunities for dance and theater creation and performance; and
+            </div>
+
+            <div class="m4 reveal">
+                &nbsp;&nbsp;&nbsp;&nbsp;Contribute to national development and progress by forming citizens who possess cultural self-esteem and national pride.
+            </div>
+        </div>
+    </section>
+    
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 5;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+   
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    </ul>
+
+    <ul class="menu">
+        <li><a href="main.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="objectives.html">OBJECTIVES</a></li>
+        <li><a href="activities.html">ACTIVITIES</a></li>
+        <li><a href="members.html">MEMBERS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+        <li><a href="developers.html">DEVELOPER'S PAGE</a></li>
+    </ul>
+    <p>© 2024 PAUICAN. All Rights Reserved.</p>
+</footer>
+
+
+
+
+</body>
+</html>

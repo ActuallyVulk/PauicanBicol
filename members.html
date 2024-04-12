@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="members-style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="objectives.html">OBJECTIVES</a></li>
+            <li><a href="activities.html">ACTIVITIES</a></li>
+            <li><a href="members.html">MEMBERS</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+            <li><a href="developers.html">DEVELOPER'S PAGE</a></li>
+           
+        </ul>
+        <ul>
+            <li><a href="#"><img class="logo" src="images/Nogot/logo.png"></a></li>
+            <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+            <li class="hideOnMobile"><a href="objectives.html">OBJECTIVES</a></li>
+            <li class="hideOnMobile"><a href="activities.html">ACTIVITIES</a></li>
+            <li class="hideOnMobile"><a href="members.html">MEMBERS</a></li>
+            <li class="hideOnMobile"><a href="events.html">EVENTS</a></li>
+            <li class="hideOnMobile"><a href="contacts.html">CONTACTS</a></li>
+            <li class="hideOnMobile"><a href="developers.html">DEVELOPER'S PAGE</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 5;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+    <div class="container">
+        <div class="background">
+
+        </div>
+        
+        <div class="banner">
+            <center><img src="images/Nagua/banner.png" alt="" style="position: relative;
+            display: inline-block; width: 100%;"></center>
+            <center>
+            <p class="bannertext">
+                Meet the Team!
+            </p>
+            </center>
+        </div>
+        <div class="chair reveal">
+            <br>
+            <center><img src="images/Nagua/Members/chair.png" alt="" class="image"></center>
+            <h1>Roentgen Dolz Armenta</h1>
+            <h2>Chairperson</h2>
+            <p style="padding-top: 90px;">
+                <center>
+                    <a href="#" data-tooltip="09619994778"><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="roentgendolz.armentabicol-u.edu.ph"><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/roentgen.armenta" data-tooltip="roentgen.armenta"><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="vice reveal">
+            <br>
+            <center><img src="images/Nagua/Members/vice.png" alt="" class="image"></center>
+            <h1>Resan Marinda</h1>
+            <h2>Vice Chairperson</h2>
+            <p style="padding-top: 135px;">
+                <center>
+                    <a href="#" data-tooltip="09919357259"><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="resanmaeoris.marinda@bicol-u.edu.ph"><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/Resanaaaa22" data-tooltip="Resanaaaa22"><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="sec reveal">
+            <br>
+            <center><img src="images/Nagua/Members/sec.png" alt="" class="image"></center>
+            <h1>Dwayne Jared Pasadilla </h1>
+            <h2>Secretary</h2>
+            <p style="padding-top: 90px;">
+                <center>
+                    <a href="#" data-tooltip="09994709736"><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="dwaynejaredluna.pasadilla@bicol-u.edu.ph"><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/jaredpasadilla" data-tooltip="jaredpasadilla"><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="finance reveal">
+            <br>
+            <center><img src="images/Nagua/Members/finance.png" alt="" class="image"></center>
+            <h1>Rhea Mae Sambajon</h1>
+            <h2>Finance Officer</h2>
+            <p style="padding-top: 88px;">
+                <center>
+                    <a href="#" data-tooltip="09104563839"><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="rheamaejoven.sambajon@bicol-u.edu.ph"><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/rmjsmbjn" data-tooltip="rmjsmbjn"><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="auditor reveal">
+            <br>
+            <center><img src="images/Nagua/Members/auditor.png" alt="" class="image"></center>
+            <h1>John Patrick Martinez</h1>
+            <h2>Auditor</h2>
+            <p style="padding-top: 88px;">
+                <center>
+                    <a href="#" data-tooltip="09952737509"><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="johnpatrickbabon.martinez@bicol-u.edu.ph"><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/profile.php?id=100030120347453" data-tooltip="John Patrick Martinez "><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="pro reveal">
+            <br>
+            <center><img src="images/Nagua/Members/pro.png" alt="" class="image"></center>
+            <h1>Tiffany Sophia Dorothea</h1>
+            <h2>Public Relations Officer</h2>
+            <p style="padding-top: 120px">
+                <center>
+                    <a href="#" data-tooltip="09939506477"><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="tiffanysophiadorotheavelacruz.espinosa@bicol-u.edu.ph "><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/tiffanysophiadorothea.espinosa" data-tooltip="tiffanysophiadorothea.espinosa"><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="pio reveal">
+            <br>
+            <center><img src="images/Nagua/Members/pio.png" alt="" class="image"></center>
+            <h1>Romeo D. Jacob</h1>
+            <h2>Public Informations Officer</h2>
+            <p style="padding-top: 95px;">
+                <center>
+                    <a href="#" data-tooltip="09674461298"><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="romeojrdiamsim.jacob@bicol-u.edu.ph "><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/romeo.diamsimjacobs" data-tooltip="romeo.diamsimjacobs"><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="bm reveal">
+            <br>
+            <center><img src="images/Nagua/Members/bm.png" alt="" class="image"></center>
+            <h1>Nica L. Cadalin</h1>
+            <h2>Business Manager</h2>
+            <p style="padding-top: 200px;">
+                <center>
+                    <a href="#" data-tooltip="09065926399"><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="nicalladone.cadalin@bicol-u.edu.ph "><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/nica.cadalin" data-tooltip="nica.cadalin"><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="bm2 reveal">
+            <br>
+            <center><img src="images/Nagua/Members/bm2.png" alt="" class="image"></center>
+            <h1>Ken Laurence Ante</h1>
+            <h2>Business Manager</h2>
+            <p style="padding-top: 160px;">
+                <center>
+                    <a href="#" data-tooltip="09275661316"><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="klba2022-3770-33724@bicol-u.edu.ph"><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/kenlaurence.ante.7
+                    " data-tooltip="kenlaurence.ante.7"><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="fourth reveal">
+            <br>
+            <center><img src="images/Nagua/Members/fourth.png" alt="" class="image"></center>
+            <h1>Rodante P. Pabillar</h1>
+            <h2>4th Year Representative</h2>
+            <p style="padding-top: 130px;">
+                <center>
+                    <a href="#" data-tooltip="09912194154"><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="rodantemagallones.pabillar@bicol-u.edu.ph 
+                    "><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/profile.php?id=61550078009119" data-tooltip="Rodante Pabillar"><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="third reveal">
+            <br>
+            <center><img src="images/Nagua/Members/third.png" alt="" class="image"></center>
+            <h1>Lorenzo D. Andes</h1>
+            <h2>3rd Year Representative</h2>
+            <p style="padding-top: 130px;">
+                <center>
+                    <a href="#" data-tooltip="09562531082"><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="lorenzodehitta.andes@bicol-u.edu.ph "><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/praybreathe.enzodehittaandes28" data-tooltip="praybreathe.enzodehittaandes28"><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="second reveal">
+            <br>
+            <center><img src="images/Nagua/Members/second.png" alt="" class="image"></center>
+            <h1>Dahna Baldo</h1>
+            <h2>2nd Year Representative</h2>
+            <p style="padding-top: 180px;">
+                <center>
+                    <a href="#" data-tooltip="09777795269 "><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="dab2022-8999-61887@bicol-u.edu.ph"><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/danadana.baldo" data-tooltip="danadana.baldo"><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="first reveal">
+            <br>
+            <center><img src="images/Nagua/Members/first.png" alt="" class="image"></center>
+            <h1>Reina Mae B. Revilla</h1>
+            <h2>1st Year Representative</h2>
+            <p style="padding-top: 100px;">
+                <center>
+                    <a href="#" data-tooltip="09706339444 "><span><img src="images/Nagua/phone-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="#" data-tooltip="rmbr2023-8987-25476@bicol-u.edu.ph "><span><img src="images/Nagua/email-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                    <a href="https://www.facebook.com/reinamae.revilla.9" data-tooltip="reinamae.revilla.9"><span><img src="images/Nagua/facebook-svgrepo-com.svg" alt="" style="width: 20%;"></span></a>
+                </center>
+            </p>
+        </div>
+        <div class="exe1 reveal">
+            <br>
+            <center><img src="images/Nagua/Members/exe1.png" alt="" class="image"></center>
+            <h1>Pia Franchesca Candelaria</h1>
+            <h2>Executive Committee</h2>
+            <br>
+        </div>
+        <div class="exe2 reveal">
+            <br>
+            <center><img src="images/Nagua/Members/exe2.png" alt="" class="image"></center>
+            <h1>Jhon Christian Velasco</h1>
+            <h2>Executive Committee</h2>
+            <br>
+        </div>
+        <div class="secretariat reveal">
+            <br>
+            <center><img src="images/Nagua/Members/secretariat.png" alt="" class="image"></center>
+            <h1>Maricar Ludovice Aranil</h1>
+            <h2>Secretariat Committee</h2>
+            <br>
+        </div>
+        <div class="financom1 reveal">
+            <br>
+            <center><img src="images/Nagua/Members/financom1.png" alt="" class="image"></center>
+            <h1>Regimar P. Santiago</h1>
+            <h2>Finance Committee</h2>
+            <br>
+        </div>
+        <div class="financom2 reveal">
+            <br>
+            <center><img src="images/Nagua/Members/financom2.png" alt="" class="image"></center>
+            <h1>Allyzza Mae Arango</h1>
+            <h2>Finance Committee</h2>
+            <br>
+        </div>
+        <div class="creat1 reveal">
+            <br>
+            <center><img src="images/Nagua/Members/creat1.png" alt="" class="image"></center>
+            <h1>Zairalyn Sacayan</h1>
+            <h2>Creatives Committee</h2>
+            <br>
+        </div>
+        <div class="creat2 reveal">
+            <br>
+            <center><img src="images/Nagua/Members/creat2.png" alt="" class="image"></center>
+            <h1>Jedrick Zabala</h1>
+            <h2>Creatives Committee</h2>
+            <br>
+        </div>
+        <div class="piocom reveal">
+            <br>
+            <center><img src="images/Nagua/Members/piocom.png" alt="" class="image"></center>
+            <h1>Jay Imperial</h1>
+            <h2>PIO Committee</h2>
+            <br>
+        </div>
+        <div class="techcom reveal">
+            <br>
+            <center><img src="images/Nagua/Members/techcom.png" alt="" class="image"></center>
+            <h1>Joshney Angel Camu</h1>
+            <h2>Technical Committee</h2>
+            <br>
+        </div>
+        <div class="techcom2 reveal">
+            <br>
+            <center><img src="images/Nagua/Members/techcom2.png" alt="" class="image"></center>
+            <h1>Dalton Rangasajo</h1>
+            <h2>Technical Committee</h2>
+            <br>
+        </div>
+        <div class="logic1 reveal">
+            <br>
+            <center><img src="images/Nagua/Members/logic1.png" alt="" class="image"></center>
+            <h1>Dan Luis Rico</h1>
+            <h2>Logistics Committee</h2>
+            <br>
+        </div>
+        <div class="logic2 reveal">
+            <br>
+            <center><img src="images/Nagua/Members/logic2.png" alt="" class="image"></center>
+            <h1>Lourraine Luzurgia</h1>
+            <h2>Logistics Committee</h2>
+            <br>
+        </div>
+        <div class="logic3 reveal">
+            <br>
+            <center><img src="images/Nagua/Members/logic3.png" alt="" class="image"></center>
+            <h1>Vencent Nabata</h1>
+            <h2>Logistics Committee</h2>
+            <br>
+        </div>
+      </div>
+      <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        </ul>
+
+        <ul class="menu">
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="objectives.html">OBJECTIVES</a></li>
+            <li><a href="activities.html">ACTIVITIES</a></li>
+            <li><a href="members.html">MEMBERS</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+            <li><a href="developers.html">DEVELOPER'S PAGE</a></li>
+        </ul>
+        <p>© 2024 PAUICAN. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

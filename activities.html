@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="activites-style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+</head> 
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="objectives.html">OBJECTIVES</a></li>
+            <li><a href="activities.html">ACTIVITIES</a></li>
+            <li><a href="members.html">MEMBERS</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+            <li><a href="developers.html">DEVELOPER'S PAGE</a></li>
+           
+        </ul>
+        <ul>
+            <li><a href="#">LOGO</a></li>
+            <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+            <li class="hideOnMobile"><a href="objectives.html">OBJECTIVES</a></li>
+            <li class="hideOnMobile"><a href="activities.html">ACTIVITIES</a></li>
+            <li class="hideOnMobile"><a href="members.html">MEMBERS</a></li>
+            <li class="hideOnMobile"><a href="events.html">EVENTS</a></li>
+            <li class="hideOnMobile"><a href="contacts.html">CONTACTS</a></li>
+            <li class="hideOnMobile"><a href="developers.html">DEVELOPER'S PAGE</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <div class="container1">
+        <div id="banner">
+            ACTIVITIES
+        </div>
+
+        <div class="reveal" id="item1">
+            
+        </div>
+
+        <div class="reveal" id="item2">
+            <h1>WOMEN'S MONTH: KURAHAW</h1>
+            <p>
+                Sa pag gunita ng International Women's Month, nagsagawa ng Theater dance production na pinamagatang "KURAHAW" ang Performing Arts Union Integrated for Culture, Arts, and Nature (PAUICAN) kasama ang Bagsik production at Banaag Production. Ang nasabing pagtatanghal ay naganap sa OLD CAL PYRAMID. 
+            </p>
+            <p><br>
+                "Madami ng nagbago pero wala pa rin nagbabago" isa sa mga mensahe ng dula na pinapakita ang hirap na nararanasan ng mga kababaihan sa mga nagdaang panahon. Bilang mga artista ng bayan, paulit ulit namin gagawin ang mga ganitong klaseng dula hanggat walang nagbabago sa sistema, patuloy kami magiging boses at sisigaw sa pamamagitan ng pagtatanghal para sa mga babaeng patuloy na inaagawan ng karapatan at lugar sa lipunan.
+            </p><br>
+            <h3>ABANTE, BABAE!</h3>
+            <br>
+            <h5>
+                #BABAYI_AN&nbsp;&nbsp;
+                #KURAHAW<br>
+                #AbanteBabae&nbsp;&nbsp;
+                #ProtectTransRights<br>
+                #SafeSpacesForAll&nbsp;&nbsp;
+                #DefendFilipinoWomen
+            </h5>
+        </div>
+
+        <div class="reveal" id="item3">
+            <hr class="line1">
+            <h1>GALLERY</h1>
+            <hr class="line1">
+        </div>
+
+        <div class="reveal" id="item4">
+
+        </div>
+        <div class="reveal" id="item5">
+
+        </div>
+        <div class="reveal" id="item6">
+
+        </div>
+        <div class="reveal" id="item7">
+
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="reveal" id="item8">
+            <h1>LAKBAY AIDA</h1>
+        </div>
+
+        <div class="reveal" id="item9">
+            
+        </div>
+
+        <div class="reveal" id="item10">
+            
+        </div>
+
+        <div class="reveal" id="item11">
+            <p>
+                Advocates march in ‘Lakbay Aida,’ an acquired immunodeficiency syndrome (AIDS) disease awareness event spearheaded by the Performing Arts Union Integrated for Culture Arts and Nature (PAUICAN) along with various organizations and publications. The event also included various competitions, performances, aids awareness seminar/discussion, and film showing. Justin Blanza, a second-year Bachelor in Performing Arts and the event head, shared that the main goal of the event is to boost HIV and AIDS awareness, especially in the Performing Arts Department.   
+            </p><br>
+            <p>
+                “[Because of the] rampant fake news, nagkakaroon ng misinformation kasi ang sources are social media [outlets] na lang, and hindi siya mga credible sources. Kaya ang goal ng [event] na ito ay to raise awareness…awareness is important because awareness is prevention,” Blanza said. The march was shortly followed by the awarding ceremony and giving of free contraceptives, candle lighting, and AIDS awareness pamphlets.  
+            </p>
+        </div>
+
+        <div class="reveal" id="item12">
+            <hr class="line2">
+            <h1>GALLERY</h1>
+            <hr class="line2">
+        </div>
+
+        <div class="reveal" id="item13">
+
+        </div>
+        <div class="reveal" id="item14">
+
+        </div>
+        <div class="reveal" id="item15">
+
+        </div>
+        <div class="reveal" id="item16">
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 5;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    </ul>
+
+    <ul class="menu">
+        <li><a href="main.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="objectives.html">OBJECTIVES</a></li>
+        <li><a href="activities.html">ACTIVITIES</a></li>
+        <li><a href="members.html">MEMBERS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+        <li><a href="developers.html">DEVELOPER'S PAGE</a></li>
+    </ul>
+    <p>© 2024 PAUICAN. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

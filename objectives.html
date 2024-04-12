@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="objectives-style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="objectives.html">OBJECTIVES</a></li>
+            <li><a href="activities.html">ACTIVITIES</a></li>
+            <li><a href="members.html">MEMBERS</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+            <li><a href="developers.html">DEVELOPER'S PAGE</a></li>
+           
+        </ul>
+        <ul>
+            <li><a href="main.html"><img class="logo" src="images/Nogot/logo.png"></a></li>
+            <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+            <li class="hideOnMobile"><a href="objectives.html">OBJECTIVES</a></li>
+            <li class="hideOnMobile"><a href="activities.html">ACTIVITIES</a></li>
+            <li class="hideOnMobile"><a href="members.html">MEMBERS</a></li>
+            <li class="hideOnMobile"><a href="events.html">EVENTS</a></li>
+            <li class="hideOnMobile"><a href="contacts.html">CONTACTS</a></li>
+            <li class="hideOnMobile"><a href="developers.html">DEVELOPER'S PAGE</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+
+    <section class="banners">
+        <div class="hero-banner">
+            <div class="title">
+                <h1>Lights, Camera, Action! <span> Connecting Hearts Through Performance</span></h1>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="objectives">
+        <div class="objective">
+            <div class="title2 reveal">
+                <h1>OBJECTIVES</h1>
+            </div>
+
+            <div class="desc reveal">
+                <p>
+                    Driven to be the BU College of Arts and Letters' leading theater organization, we aim to cultivate a generation of well-rounded performers by fostering artistic growth, cultural appreciation, and social consciousness.
+                </p>
+            </div>
+
+            <div class="o1 reveal">
+                To serve as the premiere theater organization
+at the BU College of Arts and Letters
+            </div>
+
+            <div class="o2 reveal">
+                To train a pool of students to become holistic
+and disciplined artists of the nation while
+promoting culture and arts.
+
+            </div>
+
+            <div class="o3 reveal">
+                To immerse its members in holistic
+development and social awareness through its
+events and productions.
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="container4">
+    <section class="goals">
+        <div class="goal">
+            <div class="title3 reveal">
+                <h1>Our <span>Goals</span></h1>
+            </div>
+
+            <div class="desc2 reveal">
+                <p>
+                    &nbsp;&nbsp;&nbsp;Equipping students with comprehensive pre-professional arts training, fostering innovative exploration of social issues, and promoting cultural heritage preservation are the cornerstones of our program.
+                </p>
+            </div>
+            
+            <div class="g1 reveal">
+                Provide comprehensive pre-professional training in the areas of acting, directing, dance, music, literary and theater technology.
+            </div>
+
+            <div class="g2 reveal">
+                Provide students and extended communities distinctly innovative approaches to research/ creative work in the arts anchored on the millennium development goals.
+            </div>
+
+            <div class="g3 reveal">
+                Enhance students interests in skills in Arts, extension service and production activities.
+            </div>
+
+            <div class="g4 reveal">
+                Inculcate among the students the discipline, dynamism dedication and commitment and the preservation of the cultural heritage of the Bicolanos for national unity and identity.
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 5;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    </ul>
+
+    <ul class="menu">
+        <li><a href="main.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="objectives.html">OBJECTIVES</a></li>
+        <li><a href="activities.html">ACTIVITIES</a></li>
+        <li><a href="members.html">MEMBERS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+        <li><a href="developers.html">DEVELOPER'S PAGE</a></li>
+    </ul>
+    <p>© 2024 PAUICAN. All Rights Reserved.</p>
+</footer>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: black;
+    background: linear-gradient(45deg, #96b0b3, #8db2b2, #a5d1d2, #4d948c, #347377, #b6d8da);
+    animation: color 5s ease-in-out infinite;
+    background-size: 300% 300%;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes color{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+*::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+*::-webkit-scrollbar-track{
+    background: #1e1e24;
+}
+
+*::-webkit-scrollbar-thumb{
+    background: #6649b8;
+}
+
+
+main{
+    margin-left: 5rem;
+}
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+/*-------about us----------*/
+
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+   
+    margin: auto;
+}
+
+.about{
+    background-color: #b6d8da;
+}
+ 
+
+.about-us{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 80px;
+   
+    min-height: 100vh;
+    margin: auto;
+}
+
+.title{
+    grid-row: 2;
+    grid-column: 6 / 13;
+    border-radius: 15px;
+    padding: 50px;
+    font-size: 50px;
+    color: #065c53;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.desc{
+    grid-row: 4 ;
+    grid-column: 6 / 13;
+    padding: 50px;
+    font-size: 18px;
+    color: #0d2644;
+}
+
+.text, p{
+    grid-row: 5 ;
+    grid-column: 6 / 13;
+    padding: 30px;
+    font-size: 20px;
+    color: #0d2644;
+    text-align: justify;
+}
+
+.image{
+    grid-row: 2/9 ;
+    grid-column: 2 / 6;
+    aspect-ratio: 16/9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image, img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-self: center;
+    align-self: center;
+    border-radius: 15px;
+}
+
+.missions-nature{
+    background-color: #a5d1d2;
+}
+
+.mission-nature{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 80px;
+    min-height: 100vh;
+    margin: auto;
+    grid-gap: 20px;
+}
+
+.title2{
+    grid-row: 1;
+    grid-column:  1/13;
+}
+
+
+
+.title2 h1{
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 90px;
+    color: #065c53;
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title2 p{
+    font-weight: 500;
+    font-size: 23px;
+    color: #0d2644;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 600;
+}
+
+.mission{
+    grid-row: 4/8;
+    grid-column:  2/7;
+    background-image: url(images/Nogot/mission.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px;
+}
+
+.mission h1{
+    padding: 10px ;
+    font-size: 60px;
+    color: #f1eff4;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mission p{
+    padding: 30px ;
+    font-size: 25px;
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+}
+
+.vision{
+    grid-row: 4/8;
+    grid-column:  7/12;
+    background-image: url(images/Nogot/mission.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px;
+}
+
+.vision h1{
+    padding: 10px ;
+    font-size: 60px;
+    color: #f1eff4;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.vision p{
+    padding: 30px ;
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    margin: auto;
+}
+
+
+.natures{
+    background-color: #96b0b3;
+}
+
+.nature{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 80px;
+    min-height: 100vh;
+    margin: auto;
+    grid-gap: 20px;
+}
+
+.title3{
+    grid-row: 2/8;
+    grid-column:  2/6;
+    background-image: url(images/Nogot/bu\ torch.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+
+.title3 h1{
+    padding: 50px 0;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #065c53;
+    text-align: center;
+    padding: 30px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title3 p{
+    font-weight: 500;
+    font-size: 25px;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.m1{
+    grid-row: 2/5;
+    grid-column:  6/9;
+    background-color: #347377;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px #92dde0, 10px 10px #14aea4, 15px 15px #065c53;
+}
+
+.m2{
+    grid-row: 2/5;
+    grid-column:  9/12;
+    background-color: #347377;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px #92dde0, 10px 10px #14aea4, 15px 15px #065c53;
+}
+
+.m3{
+    grid-row: 5/8;
+    grid-column:  6/9;
+    background-color: #347377;
+    font-size: 25px;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px #92dde0, 10px 10px #14aea4, 15px 15px #065c53;
+}
+
+.m4{
+    grid-row: 5/8;
+    grid-column:  9/12;
+    background-color: #347377;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px #92dde0, 10px 10px #14aea4, 15px 15px #065c53;
+}
+
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+

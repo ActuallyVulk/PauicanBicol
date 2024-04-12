@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="objectives.html">OBJECTIVES</a></li>
+            <li><a href="activities.html">ACTIVITIES</a></li>
+            <li><a href="members.html">MEMBERS</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+            <li><a href="developers.html">DEVELOPER'S PAGE</a></li>
+           
+        </ul>
+        <ul>
+            <li><a href="main.html"><img class="logo" src="images/Nogot/logo.png"></a></li>
+            <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+            <li class="hideOnMobile"><a href="objectives.html">OBJECTIVES</a></li>
+            <li class="hideOnMobile"><a href="activities.html">ACTIVITIES</a></li>
+            <li class="hideOnMobile"><a href="members.html">MEMBERS</a></li>
+            <li class="hideOnMobile"><a href="events.html">EVENTS</a></li>
+            <li class="hideOnMobile"><a href="contacts.html">CONTACTS</a></li>
+            <li class="hideOnMobile"><a href="developers.html">DEVELOPER'S PAGE</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <div class="container">
+        <section class="one">
+           
+        </section>
+
+        <section class="two">
+            <div class="about">
+                <div class="image">
+                    <img src="images/Nogot/pawikan.png">
+                </div>
+    
+                <div class="title">
+                    <h1>ABOUT US</h1>
+                </div>
+
+                <div class="title4">
+                    <h1>OBJECTIVES</h1>
+                </div>
+
+                <div class="desc4">
+                    <h2>
+                        Beyond the Stage, Building the Future of Theater.
+                    </h2>
+                </div>
+
+                <div class="text4">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAUICAN isn't your average theater organization. We're the vibrant heart of theater at the BU College of Arts and Letters, 
+                        fostering a community that goes beyond the stage. Our mission is to empower the next generation of performers. <br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intrigued? Dive deeper into our core objectives and discover how you can be part of PAUICAN's transformative journey. <br> <br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="objectives.html" class="hero-btn">Learn More</a>
+                    </p>
+                </div>
+    
+                <div class="desc">
+                    <h2>WE ASPIRE TO INSPIRE AND PERFORM TO REFORM</h2>
+                </div>
+    
+                <div class="text">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Performing Arts Union Integrated for Culture, Arts and Nature (PAUICAN) is the
+                         official department-based organization of the Bachelor of Performing Arts (Theater).... <br><br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html" class="hero-btn">Learn More</a>
+                    </p>
+                    
+                </div>
+                
+               </div>
+        </section>
+
+        <section class="three">
+            <div class="activity">
+                <div class="title3">
+                    <h1>PAUICAN Activities</h1>
+                </div>
+                <div class="desc3">
+                    <h2>
+                        Where Creativity Blooms, Community Thrives, and Change Happens!
+                    </h2>
+                </div>
+                <div class="text3">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explore your artistic side with fashion shows and art exhibits, delve into important social issues like mental 
+                        health and HIV awareness, and celebrate diversity through empowering performances.  Join insightful discussions,
+                         showcase your talents, and be part of a vibrant community that thrives on creativity and social responsibility.
+                           PAUICAN Activities: your gateway to artistic expression, community connection, and positive change! 
+                           
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="activity.html" class="hero-btn">Learn More</a>
+
+
+                    </p>
+                   
+                </div>
+            <div class="container3">
+                <div class="box">
+                    <span><img src="images/Nogot/e1.jpg"></span>
+                </div>
+                <div class="box">
+                    <span><img src="images/Nogot/e2.jpg"></span>
+                </div>
+                <div class="box">
+                    <span><img src="images/Nogot/e3.jpg"></span>
+                </div>
+                <div class="box">
+                    <span><img src="images/Nogot/e4.jpg"></span>
+                </div>
+                <div class="box">
+                    <span><img src="images/Nogot/e5.jpg"></span>
+                </div>
+                <div class="box">
+                    <span><img src="images/Nogot/e6.jpg"></span>
+                </div>
+                <div class="box">
+                    <span><img src="images/Nogot/e7.jpg"></span>
+                </div>
+                <div class="box">
+                    <span><img src="images/Nogot/e8.jpg"></span>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+        <section class="four">
+            <div class="members">
+                <div class="title5">
+                    <h1>
+                        PAUICAN Inner Circle
+                    </h1>
+                </div>
+                <div class="desc5">
+                    <h2>
+                        The Heartbeat of PAUICAN: Meet the Passionate Crew Behind the Scenes!
+                    </h2>
+                </div>
+                <div class="text5">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This section provides insight into the dedicated individuals who guide 
+                        the Performing Arts organization. Meet our esteemed officers and committee members, 
+                        who volunteer their time and expertise to ensure the organization's success. <br> <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="members.html" class="hero-btn">Learn More</a>
+
+                    </p>
+                    
+                </div>
+                <div class="image5">
+                    <img src="images/Nogot/banner.png">
+                </div>
+            </div>
+            
+
+            
+        </section>
+
+        <section class="five">
+            <div class="events">
+
+                <div class="title2">
+                    <h1>EVENTS</h1>
+                </div>
+
+                <div class="desc2">
+                    <h2>
+                        Step into the Spotlight! 
+                    </h2>
+                </div>
+
+                <div class="text2">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prepare to be illuminated! This page is your backstage pass to exclusive gatherings that shed light on the inner workings of our organization. Here, we'll be dissecting the previous semester like a captivating play, discussing topics, information, and changes that unfolded.  These events are your chance to stay in the know, ensuring you're never left in the wings. So, grab your metaphorical popcorn and get ready for an informative performance –  let's keep the dialogue flowing! <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="events.html" class="hero-btn">Learn More</a>
+                    </p>
+                   
+                </div>
+                <div class="container2">
+                    <div class="card" style="--i:-3;"><img src="images/Nogot/im7.jpg"></div>
+                    <div class="card" style="--i:-2;"><img src="images/Nogot/im6.jpg"></div>
+                    <div class="card" style="--i:-1;"><img src="images/Nogot/im5.jpg"></div>
+                    <div class="card" style="--i:0;"><img src="images/Nogot/im4.jpg"></div>
+                    <div class="card" style="--i:1;"><img src="images/Nogot/im3.jpg"></div>
+                    <div class="card" style="--i:2;"><img src="images/Nogot/im2.jpg"></div>
+                    <div class="card" style="--i:3;"><img src="images/Nogot/im1.jpg"></div>
+                </div>
+
+
+    
+            </div>
+        </section>
+
+        <section class="six">
+            <div class="contacts">
+                <div class="title6">
+                    <h1>Curtain Call: Contact PAUICAN</h1>
+                </div>
+                <div class="desc6">
+                    <h2>
+                        The Show Must Go On... Online! Follow PAUICAN.
+                    </h2>
+                </div>
+                <div class="text6">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stay in the loop and engage with the Performing Arts community! 
+                        This page provides links to our social media channels, allowing you to follow us for the latest news,
+                         upcoming events, and behind-the-scenes glimpses. Join the conversation and share your passion for the performing arts!<br> <br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="contacts.html" class="hero-btn">Learn More</a>
+                    </p>
+                </div>
+                <div class="image6">
+                    <img src="images/Nogot/pic1.png">
+                </div>
+               </div>
+        </section>
+
+        <section class="seven">
+           <div class="developers">
+                <div class="title7">
+                    <h1>Behind the Pixels: PAUICAN's Developer Corner</h1>
+                </div>
+                <div class="desc7">
+                    <h2>Click Here to Meet the Pixelsmiths of PAUICAN!</h2>
+                </div>
+                <div class="text7">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This page introduces the talented team who brought the Performing Arts website to life. Here, you'll learn about the developers' 
+                        roles and expertise, giving you a glimpse into the dedication and skill that went into building this online platform for the performing 
+                        arts community. <br> <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="developers.html" class="hero-btn">Learn More</a>
+                    </p>
+                </div>
+                <div class="image7">
+                    <img src="images/Nogot/banner_devs.png">
+                </div>
+           </div>
+        </section>
+        
+    </div>
+
+
+        
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        </ul>
+
+        <ul class="menu">
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="objectives.html">OBJECTIVES</a></li>
+            <li><a href="activities.html">ACTIVITIES</a></li>
+            <li><a href="members.html">MEMBERS</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+            <li><a href="developers.html">DEVELOPER'S PAGE</a></li>
+        </ul>
+        <p>© 2024 PAUICAN. All Rights Reserved.</p>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+
+</body>
+</html>
