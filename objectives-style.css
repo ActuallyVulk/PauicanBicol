@@ -209,10 +209,26 @@ section{
     grid-gap: 20px;
 }
 
+.miniBanner{
+    grid-row: 1/2;
+    grid-column: 2 / 12;
+}
+
+.miniBanner, img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-self: center;
+    align-self: center;
+    border-radius: 15px;
+}
+
 .title3{
     grid-row: 1/9;
     grid-column: 1 / 5;
-    background-color: #14aea4;
+    background-image: url(images/Nogot/obj2.jpg);
+    background-position: center;
+    background-size: cover;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

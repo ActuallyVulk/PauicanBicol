@@ -166,4 +166,9 @@ font-family: "Poppins", sans-serif;
     transform: scale(1.05);
   }
 }
+
+.space{
+  grid-row: 5/7;
+  grid-column: 1/12;
+}
   

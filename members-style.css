@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+#item16{
+  grid-column: 1 / 13;
+  grid-row: 27 / 50;
+}
+
 body
 {
   color: black;
